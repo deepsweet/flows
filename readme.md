@@ -5,6 +5,7 @@ A proof of concept of alternative [Flow Library Definitions](https://flow.org/en
 * Library Definitions ("libdefs") package has a standalone and independent version – whenever target dependency got major version bump there should be a major bump of libdefs as well
 * Flow version doesn't matter – when it doesn't work with the latest one then it's a bug
 * Target dependency version is specified in libdefs `package.json` as peer depehdency
+* [Roadmap to a v3.0.0 of flow-typed](https://github.com/flowtype/flow-typed/issues/1494)
 
 ## How to
 
