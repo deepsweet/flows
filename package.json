@@ -1,0 +1,128 @@
+{
+  "private": true,
+  "description": "@flows for Flow",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-flow": "^7.0.0-beta.42",
+    "@babel/register": "^7.0.0-beta.42",
+    "@start/cli": "^0.1.0-0",
+    "@start/plugin-babel": "^0.1.0-0",
+    "@start/plugin-clean": "^0.1.0-0",
+    "@start/plugin-env": "^0.1.0-0",
+    "@start/plugin-eslint": "^0.1.0-0",
+    "@start/plugin-find": "^0.1.0-0",
+    "@start/plugin-find-git-staged": "^0.1.0-0",
+    "@start/plugin-istanbul": "^0.1.0-0",
+    "@start/plugin-npm-publish": "^0.1.0-0",
+    "@start/plugin-overwrite": "^0.1.0-0",
+    "@start/plugin-prettier-eslint": "^0.1.0-0",
+    "@start/plugin-read": "^0.1.0-0",
+    "@start/plugin-sub-task": "^0.1.0-0",
+    "@start/plugin-tape": "^0.1.0-0",
+    "@start/plugin-watch": "^0.1.0-0",
+    "@start/plugin-write": "^0.1.0-0",
+    "@start/reporter": "^0.1.0-0",
+    "@start/task": "^0.1.0-0",
+    "babel-eslint": "^8.2.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "flow-bin": "^0.68.0",
+    "tap-diff": "^0.1.1"
+  },
+  "start": {
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          },
+          "exclude": [
+            "transform-regenerator"
+          ]
+        }
+      ],
+      "@babel/preset-flow"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "standard",
+      "prettier",
+      "node",
+      "promise",
+      "import",
+      "flowtype"
+    ],
+    "extends": [
+      "standard",
+      "plugin:node/recommended",
+      "plugin:promise/recommended",
+      "plugin:import/recommended",
+      "plugin:flowtype/recommended",
+      "prettier",
+      "prettier/standard",
+      "prettier/flowtype"
+    ],
+    "env": {
+      "node": true
+    },
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": true
+      }
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "node/no-unsupported-features": [
+        "error",
+        {
+          "ignores": [
+            "asyncAwait",
+            "modules",
+            "spreadProperties"
+          ]
+        }
+      ],
+      "node/shebang": "off",
+      "promise/no-nesting": "off",
+      "import/unambiguous": "off"
+    }
+  },
+  "eslintIgnore": [
+    "build/",
+    "coverage/",
+    "node_modules/"
+  ],
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "parser": "babylon",
+    "semi": false,
+    "printWidth": 80,
+    "trailingComma": "es5"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}

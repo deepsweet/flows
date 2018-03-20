@@ -1,0 +1,28 @@
+{
+  "name": "flows-sync",
+  "version": "0.1.0-0",
+  "description": "Sync CLI for @flows",
+  "bin": {
+    "flows": "build/index.js"
+  },
+  "files": [
+    "build/"
+  ],
+  "repository": "deepsweet/flows",
+  "author": "Kir Belevich <kir@belevi.ch> (https://github.com/deepsweet)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "flowconfig": "^1.0.3",
+    "globby": "^8.0.1",
+    "graceful-fs": "^4.1.11",
+    "import-cwd": "^2.1.0",
+    "makethen": "^0.1.0",
+    "resolve-from": "^4.0.0"
+  }
+}

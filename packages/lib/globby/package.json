@@ -1,0 +1,18 @@
+{
+  "name": "@flows/globby",
+  "version": "0.1.0-0",
+  "description": "Flow types for globby",
+  "main": "src/index.js.flow",
+  "files": [
+    "src/"
+  ],
+  "repository": "deepsweet/flows",
+  "author": "Kir Belevich <kir@belevi.ch> (https://github.com/deepsweet)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "globby": "^8.0.1"
+  }
+}

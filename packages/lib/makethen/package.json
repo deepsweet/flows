@@ -1,0 +1,18 @@
+{
+  "name": "@flows/makethen",
+  "version": "0.1.0-0",
+  "description": "Flow types for makethen",
+  "main": "src/index.js.flow",
+  "files": [
+    "src/"
+  ],
+  "repository": "deepsweet/flows",
+  "author": "Kir Belevich <kir@belevi.ch> (https://github.com/deepsweet)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "makethen": "^0.1.0"
+  }
+}
