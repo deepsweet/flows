@@ -5,7 +5,7 @@ A proof of concept of alternative [Flow Library Definitions](https://flow.org/en
 1. Library Definitions ("libdefs") are published as standalone packages with independent versions – whenever target dependency got major version bump there should be a major bump of libdefs as well
 2. Flow version doesn't matter – when it doesn't work with the latest one then it's a bug
 3. Target dependency version is specified in libdefs `package.json` as peer depehdency
-4. `flows` CLI modifies `[libs]` in `.flowconfig` with libdefs directories found across root package and/or Yarn workspaces instead of copying files into special folder
+4. `flows` CLI modifies `[libs]` in `.flowconfig` with libdefs dev dependencies found across root package and/or Yarn workspaces instead of copying files into special folder
 
 ## How to
 
