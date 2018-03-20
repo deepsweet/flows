@@ -2,7 +2,7 @@
 
 A proof of concept of alternative [Flow Library Definitions](https://flow.org/en/docs/libdefs/) manager. Strict "work in progress" state, I learn a lot about Flow.
 
-* Library Definitions ("libdefs") has a standalone version – whenever target dependency got major version bump there should be a major bump of libdefs as well
+* Library Definitions ("libdefs") package has a standalone and independent version – whenever target dependency got major version bump there should be a major bump of libdefs as well
 * Flow version doesn't matter – when it doesn't work with the latest one then it's a bug
 * Target dependency version is specified in libdefs `package.json` as peer depehdency
 
