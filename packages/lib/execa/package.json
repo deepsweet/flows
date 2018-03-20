@@ -2,7 +2,7 @@
   "name": "@flows/execa",
   "version": "0.1.0-0",
   "description": "Flow types for execa",
-  "main": "src/index.js.flow",
+  "main": "src/index.js",
   "files": [
     "src/"
   ],
