@@ -47,8 +47,6 @@ $ yarn add --dev --cwd packages/bar @flows/three
 $ yarn flows
 ```
 
-^ [yarn/issues/3911](https://github.com/yarnpkg/yarn/issues/3911)
-
 ```diff
 diff --git .flowconfig .flowconfig
 
@@ -59,5 +57,5 @@ diff --git .flowconfig .flowconfig
 ```
 
 ^ Ruins comments and newlines between sections, have to write own `.flowconfig` parser/serializer<br/>
-^ [flow/issues/5749](https://github.com/facebook/flow/issues/5749) +  [flow/issues/2364](https://github.com/facebook/flow/issues/2364) so only one `node_modules/@flows` line is needed to be included to `[libs]`<br/>
+^ [flow/issues/5749](https://github.com/facebook/flow/issues/5749) +  [flow/issues/2364](https://github.com/facebook/flow/issues/2364) so only one `node_modules/@flows` line needs to be included to `[libs]`<br/>
 ^ [flow/issues/153](https://github.com/facebook/flow/issues/153) to get rid of custom (?) `.flowconfig` format in favor of JSON/YAML/TOML and/or field in `package.json`
