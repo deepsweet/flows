@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "flowconfig": "^1.0.3",
-    "globby": "^8.0.1",
+    "globby": "^9.2.0",
     "graceful-fs": "^4.1.11",
-    "import-cwd": "^2.1.0",
-    "makethen": "^0.1.0",
-    "resolve-from": "^4.0.0"
+    "import-cwd": "^3.0.0",
+    "makethen": "^0.3.0",
+    "resolve-from": "^5.0.0"
   }
 }
