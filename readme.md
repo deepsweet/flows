@@ -1,5 +1,7 @@
 # @flows
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/deepsweet/flows.svg)](https://greenkeeper.io/)
+
 A proof of concept of alternative [Flow Library Definitions](https://flow.org/en/docs/libdefs/) manager. Strict "work in progress" state, I learn a lot about Flow.
 
 1. Library Definitions ("libdefs") are published as standalone packages with independent versions – whenever target dependency got major version bump there should be a major bump of libdefs as well
